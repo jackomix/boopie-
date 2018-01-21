@@ -11,7 +11,7 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 setInterval(() => {
-  http.get(`http://${process.env.boopie-}.glitch.me/`);
+  http.get('http://boopie.glitch.me/');
 }, 280000);
 
 const config = require("./config.json");
@@ -41,9 +41,10 @@ client.on("message", message => {
   try {
     let commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
+    console.log("Message detected.")
   } catch (err) {
     console.error(err);
   }
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
