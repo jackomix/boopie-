@@ -7,28 +7,36 @@ exports.run = (client, message, args) => {
   "fields": [
     {
       "name": "^help",
-      "value": "Displays the message\nyou're seeing right now!\n*(You silly goose.)*\n"
+      "value": "shows commands"
     },
     {
       "name": "^ping",
-      "value": "See if I respond and how\nlong it takes me to.\n"
+      "value": "see if i'm laggin'"
     },
     {
       "name": "^hello",
-      "value": "Say hello to me. :)"
+      "value": "say hi to me"
     },
     {
       "name": "^avatar [@user]",
-      "value": "Get the link of the avatar\na user (or you if you don't\nmention anyone).\n"
+      "value": "get the avatar of someone (or you if no user is mentioned)"
     },
     {
       "name": "^8ball <question>",
-      "value": "Ask me a yes or no question\nand I'll give you an answer!\n"
+      "value": "ask a yes or no question"
     },
     {
       "name": "^github",
-      "value": "Get the link to the github repo!\n"
-    }
+      "value": "get a link to the github repo"
+    },
+    {
+      "name": "^say",
+      "value": "make me say stuff"
+    },
+    {
+      "name": "^me",
+      "value": "show that you do an action"
+    },
   ]
 };
 message.channel.send({ embed }).catch(console.error);

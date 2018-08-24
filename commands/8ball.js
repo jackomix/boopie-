@@ -1,19 +1,19 @@
 exports.run = (client, message, args) => {
     if (args.length < 1) {
-      message.channel.send("How can I answer your question if you never asked it?");
+      message.channel.send("what's your question?");
       return;
     } 
     var answers = [
-      "Yeah!",
-      "Nah...",
-      "Maybe?",
-      "Probably not...",
-      "Probably",
-      "Think about it...",
-      "Most likely!",
-      "Most unlikely...",
-      "Ask a friend!",
-      "What do you think?"
+      "100%",
+      "nah",
+      "maybe",
+      "probs not",
+      "probs",
+      "think about it",
+      "most likely",
+      "most unlikely",
+      "ask a friend",
+      "what do you think?"
     ]
     var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
   
